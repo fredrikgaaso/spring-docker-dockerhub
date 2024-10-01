@@ -23,3 +23,5 @@ jobs:
           docker build . -t hello
           docker tag hello 244530008913.dkr.ecr.eu-west-1.amazonaws.com/frga004/docker:$rev
           docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/frga004/docker:$rev
+          docker tag hello fredrikgaaso/lab06_docker
+          docker push fredrikgaaso/lab06_docker

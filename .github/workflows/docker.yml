@@ -22,8 +22,6 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker build . -t hello
-          docker tag hello fredrikgaaso/lab06_docker
-          docker push fredrikgaaso/lab06_docker
 
       - name: Log out from DockerHub
         run: docker logout
